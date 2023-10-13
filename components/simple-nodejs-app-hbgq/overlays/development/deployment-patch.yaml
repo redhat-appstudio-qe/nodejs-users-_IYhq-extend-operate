@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: simple-nodejs-app-hbgq
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-cloj-tenant/nodejs-users/simple-nodejs-app-hbgq@sha256:5d011dbc05de8f19132cb2efea135054bd11dbb355bc9552355a7ee90d441f00
+        name: my-nodejs
+        resources: {}
+status: {}
